@@ -49,7 +49,7 @@ jobs:
                         },
                         {
                           "type": "mrkdwn",
-                          "text": "*Repository*: ${{secrete.REPO_URL}}"
+                          "text": "*Repository*: \n${{github.server_url}}/${{ github.repository }}"
                         }
                       ]
                     },
@@ -57,19 +57,19 @@ jobs:
                       "type": "section",
                       "text": {
                         "type": "mrkdwn",
-                        "text": "test"
+                        "text": "${{ secrets.RAILWAY_url }}"
                       },
                       "accessory": {
                         "type": "button",
                         "text": {
                           "type": "plain_text",
-                          "text": "Go"
+                          "text": "Go",
+                          "emoji": true
                         },
-                        "style": "primary",
-                        "action_id": "button_click"
-                      },
-                      "block_id": "right_button"
-                    }
+                        "value": "click_me_123",
+                        "url": "${{ secrete.RAILWAY_URL }}",
+                        "action_id": "button-action"
+                      }
                   ]
                 }
           env:
