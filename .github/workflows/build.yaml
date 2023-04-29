@@ -9,6 +9,7 @@ jobs:
         - name: Checkout soure
           uses: actions/checkout@v3
           
+          name: i want to deploy railway
           uses: bervProject/railway-deploy@main
           with:
             railway_token: ${{ secrets.RAILWAY_TOKEN }}
