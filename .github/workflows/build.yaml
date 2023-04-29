@@ -1,10 +1,13 @@
 name: test1
 on:
     push:
+        branches: [ main, 'release/v[0-99].[0-99]']
 
 jobs:
-    deploy:
+    mybear:
+        if: "!startswith(github.event.head_commit.message, '#NORUN')"
         runs-on: ubuntu-latest
+        
         steps:
         - name: Checkout soure
           uses: actions/checkout@v3
