@@ -40,15 +40,15 @@ jobs:
                         "fields": [
                           {
                             "type": "mrkdwn",
-                            "text": "*Name*:XU YUNLEI"
+                            "text": "*Name*: XU YUNLEI"
                           },
                           {
                             "type": "mrkdwn",
-                            "text": "*Email*:e1112888@u.nus.edu"
+                            "text": "*Email*: e1112888@u.nus.edu"
                           },
                           {
                             "type": "mrkdwn",
-                            "text": "*Matriculation*:E1112888"
+                            "text": "*Matriculation*: A0269505X"
                           },
                           {
                             "type": "mrkdwn",
