@@ -1,4 +1,4 @@
-name: test1
+name: ADLC3
 on:
     push:
         branches: [ main, 'release/v[0-99].[0-99]']
