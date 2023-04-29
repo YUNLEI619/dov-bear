@@ -20,58 +20,58 @@ jobs:
           uses: slackapi/slack-github-action@v1.23.0
           with:
               payload: | 
-                {
-                  "blocks": [
-                    {
-                      "type": "section",
-                      "text": {
-                        "type": "mrkdwn",
-                        "text": "*DipSA 56 CI/CD Submission*"
-                      }
-                    },
-                    {
-                      "type": "divider"
-                    },
-                    {
-                      "type": "section",
-                      "fields": [
-                        {
-                          "type": "mrkdwn",
-                          "text": "*Name*:XU YUNLEI"
-                        },
-                        {
-                          "type": "mrkdwn",
-                          "text": "*Email*:e1112888@u.nus.edu"
-                        },
-                        {
-                          "type": "mrkdwn",
-                          "text": "*Metriculation*:E1112888"
-                        },
-                        {
-                          "type": "mrkdwn",
-                          "text": "*Repository*: \n${{github.server_url}}/${{ github.repository }}"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "section",
-                      "text": {
-                        "type": "mrkdwn",
-                        "text": "${{ secrets.RAILWAY_url }}"
-                      },
-                      "accessory": {
-                        "type": "button",
+                 {
+                    "blocks": [
+                      {
+                        "type": "section",
                         "text": {
-                          "type": "plain_text",
-                          "text": "Go",
-                          "emoji": true
+                          "type": "mrkdwn",
+                          "text": "*DipSA 56 CI/CD Submission*"
+                        }
+                      },
+                      {
+                        "type": "divider"
+                      },
+                      {
+                        "type": "section",
+                        "fields": [
+                          {
+                            "type": "mrkdwn",
+                            "text": "*Name*:XU YUNLEI"
+                          },
+                          {
+                            "type": "mrkdwn",
+                            "text": "*Email*:e1112888@u.nus.edu"
+                          },
+                          {
+                            "type": "mrkdwn",
+                            "text": "*Metriculation*:E1112888"
+                          },
+                          {
+                            "type": "mrkdwn",
+                            "text": "*Repository*: \n${{github.server_url}}/${{ github.repository }}"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "section",
+                        "text": {
+                          "type": "mrkdwn",
+                          "text": "${{ secrets.RAILWAY_URL }}"
                         },
-                        "value": "click_me_123",
-                        "url": "${{ secrets.RAILWAY_URL }}",
-                        "action_id": "button-action"
+                        "accessory": {
+                          "type": "button",
+                          "text": {
+                            "type": "plain_text",
+                            "text": "Go",
+                            "emoji": true
+                          },
+                          "value": "click_me_123",
+                          "url": "${{ secrets.RAILWAY_URL }}"
+                        }
                       }
-                  ]
-                }
+                    ]
+                  }
           env:
               SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
               SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
