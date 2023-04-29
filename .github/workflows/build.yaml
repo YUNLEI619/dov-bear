@@ -49,7 +49,7 @@ jobs:
                         },
                         {
                           "type": "mrkdwn",
-                          "text": "*Repository*:"
+                          "text": "*Repository*: ${{secrete.REPO_URL}}"
                         }
                       ]
                     },
@@ -57,7 +57,7 @@ jobs:
                       "type": "section",
                       "text": {
                         "type": "mrkdwn",
-                        "text": "Railway_token."
+                        "text": "test"
                       },
                       "accessory": {
                         "type": "button",
