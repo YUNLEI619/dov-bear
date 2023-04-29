@@ -7,7 +7,7 @@ jobs:
     mybear:
         if: "!startswith(github.event.head_commit.message, '#NORUN')"
         runs-on: ubuntu-latest
-        
+
         steps:
         - name: Checkout soure
           uses: actions/checkout@v3
@@ -26,10 +26,10 @@ jobs:
                  {
                     "blocks": [
                       {
-                        "type": "section",
+                        "type": "header",
                         "text": {
-                          "type": "mrkdwn",
-                          "text": "*DipSA 56 CI/CD Submission*"
+                          "type": "plain_text",
+                          "text": "DipSA 56 CI/CD Submission"
                         }
                       },
                       {
